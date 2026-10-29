@@ -11,7 +11,7 @@ class PublicPagesTest extends TestCase
      */
     public function test_public_pages_render(): void
     {
-        foreach (['/', '/services', '/work', '/academy', '/about', '/contact'] as $url) {
+        foreach (['/', '/services', '/solutions', '/work', '/insights', '/academy', '/about', '/contact'] as $url) {
             $this->get($url)->assertOk();
         }
     }
