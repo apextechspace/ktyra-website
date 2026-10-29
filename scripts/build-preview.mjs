@@ -28,6 +28,9 @@ const layout = source('resources/views/components/site-layout.blade.php');
 mkdirSync(output, { recursive: true });
 cpSync(join(root, 'public/css'), join(output, 'css'), { recursive: true });
 cpSync(join(root, 'public/js'), join(output, 'js'), { recursive: true });
+cpSync(join(root, 'public/brand'), join(output, 'brand'), { recursive: true });
+cpSync(join(root, 'public/favicon.svg'), join(output, 'favicon.svg'));
+
 
 for (const [name, segment] of Object.entries(pages)) {
   currentPage = name;
