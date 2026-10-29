@@ -4,3 +4,12 @@
 .footer-brand{display:flex;align-items:center;gap:14px}
 .footer-logo{width:49px;height:49px;display:block;object-fit:contain;flex:none}
 @media(max-width:760px){.wordmark .brand-logo{width:40px;height:40px}.footer-logo{width:43px;height:43px}}
+
+/* Fifth hero slide — official KTYRA Academy mark */
+.scene.learning{display:grid;place-items:center}
+.academy-mark-wrap{position:relative;display:grid;place-items:center;width:min(52vw,520px);aspect-ratio:1;isolation:isolate;animation:academy-drift 8s ease-in-out infinite}
+.academy-mark-wrap::before{content:"";position:absolute;inset:10%;border-radius:50%;background:radial-gradient(circle,rgba(22,116,255,.30),rgba(93,229,255,.16) 38%,transparent 72%);filter:blur(28px);z-index:0}
+.academy-mark{position:relative;z-index:1;display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 22px 45px rgba(0,0,0,.35))}
+@keyframes academy-drift{50%{transform:translateY(-15px)}}
+@media(max-width:760px){.academy-mark-wrap{width:min(74vw,360px)}}
+@media(prefers-reduced-motion:reduce){.academy-mark-wrap{animation:none}}
