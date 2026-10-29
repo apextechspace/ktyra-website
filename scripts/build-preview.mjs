@@ -8,6 +8,8 @@ const pages = {
   home: '',
   services: 'services',
   work: 'work',
+  solutions: 'solutions',
+  insights: 'insights',
   academy: 'academy',
   about: 'about',
   contact: 'contact',
